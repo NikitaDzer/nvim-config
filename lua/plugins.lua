@@ -14,7 +14,7 @@ return require("packer").startup(function(use)
         }
 
 	-- Undo tree.
-	use "mbbill/undotree"
+        use "mbbill/undotree"
 
 	-- LSP.
 	use "neovim/nvim-lspconfig"
@@ -22,5 +22,11 @@ return require("packer").startup(function(use)
 	use "hrsh7th/cmp-nvim-lsp"
 	use "hrsh7th/cmp-buffer"
 	use "hrsh7th/cmp-path"
+
+        -- Multi cursor.
+        use {
+                "mg979/vim-visual-multi",
+                branch = "master"
+        }
 
 end)
