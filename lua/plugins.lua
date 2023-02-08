@@ -6,12 +6,19 @@ return require("packer").startup(function(use)
         -- Packer can manage itself.
         use "wbthomason/packer.nvim"
 
-	-- Fuzzy finder.
+	-- Telescope.
         use {
                 "nvim-telescope/telescope.nvim",
-		tag = "0.1.1",
+	        tag = "0.1.1",
                 requires = { {"nvim-lua/plenary.nvim"} }
         }
+
+        -- Fuzzy finder.
+        use {
+                "junegunn/fzf",
+                run = { ":call fzf#install()" }
+        }
+        use "junegunn/fzf.vim"
 
 	-- Undo tree.
         use "mbbill/undotree"

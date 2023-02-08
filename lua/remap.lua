@@ -20,7 +20,9 @@ vim.keymap.set("x", "<Leader>p", "\"_dP")
 -- vim.keymap.set("n", "<C-Y>", "\"+y")
 
 -- Rename within current file.
-vim.keymap.set("n", "<Leader>n", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+vim.keymap.set("n", "<Leader>n",
+               ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 
 -- Remove trailing whitespaces.
-vim.keymap.set("n", "<F10>", [[:%s/\s\+$//e<CR>:noh<CR>]], { silent = true })
+vim.keymap.set("n", "<F10>",
+               [[:%s/\s\+$//e<CR>:noh<CR>]], { silent = true })
