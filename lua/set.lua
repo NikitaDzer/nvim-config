@@ -26,4 +26,4 @@ vim.opt.scrolloff = 8
 -- Support for system clipboard.
 vim.opt.clipboard = "unnamedplus"
 
-vim.cmd.colorscheme = "hemisu"
+vim.cmd.colorscheme("hemisu")
