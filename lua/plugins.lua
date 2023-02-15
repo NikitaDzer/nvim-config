@@ -36,4 +36,6 @@ return require("packer").startup(function(use)
                 branch = "master"
         }
 
+        -- Local config.
+        use "MunifTanjim/exrc.nvim"
 end)
