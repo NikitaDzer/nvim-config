@@ -1,0 +1,70 @@
+-- require("hop").setup({
+--     keys = "etovxqpdygfblzhckisuran"
+-- })
+--
+-- -- Mappings configuration.
+-- local hint_char = require('hop').hint_char1
+-- local directions = require('hop.hint').HintDirection
+-- local opts = { remap = true }
+--
+-- vim.keymap.set("", "f", function()
+--     hint_char({ 
+--         direction = directions.AFTER_CURSOR, 
+--         current_line_only = true 
+--     })
+-- end, opts)
+--
+-- vim.keymap.set("", "F", function()
+--     hint_char({ 
+--         direction = directions.BEFORE_CURSOR, 
+--         current_line_only = true 
+--     })
+-- end, opts)
+
+-- vim.keymap.set("", "ff", function()
+--     hint_char({ 
+--         direction = directions.AFTER_CURSOR, 
+--         current_line_only = true 
+--     })
+-- end, opts)
+--
+-- vim.keymap.set("n", "fi", function()
+--     hint_char({ 
+--         direction = directions.AFTER_CURSOR,
+--         current_line_only = true 
+--     })
+--     vim.cmd("startinsert")
+-- end, opts)
+--
+-- vim.keymap.set("n", "fa", function()
+--     hint_char({ 
+--         direction = directions.AFTER_CURSOR,
+--         current_line_only = true,
+--         hint_offset = 1 
+--     })
+--     vim.cmd("startinsert")
+-- end, opts)
+--
+-- vim.keymap.set("", "Ff", function()
+--   hint_char({ 
+--       direction = directions.BEFORE_CURSOR,
+--       current_line_only = true 
+--   })
+-- end, opts)
+--
+-- vim.keymap.set("n", "Fi", function()
+--     hint_char({ 
+--         direction = directions.BEFORE_CURSOR,
+--         current_line_only = true 
+--     })
+--     vim.cmd("startinsert")
+-- end, opts)
+--
+-- vim.keymap.set("n", "Fa", function()
+--     hint_char({ 
+--         direction = directions.BEFORE_CURSOR,
+--         current_line_only = true, 
+--         hint_offset = 1 
+--     })
+--     vim.cmd("startinsert")
+-- end, opts)

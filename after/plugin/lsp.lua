@@ -12,6 +12,8 @@ local on_attach = function(client, bufnr)
 	vim.keymap.set("n", "<space>r", vim.lsp.buf.rename, bufopts)
 	vim.keymap.set("n", "<space>d", vim.diagnostic.open_float, opts)
 	vim.keymap.set("n", "<space>a", vim.lsp.buf.code_action, bufopts)
+
+    client.server_capabilities.semanticTokensProvider = nil 
 end
 
 -- Use LSP server.
@@ -20,7 +22,7 @@ for _, lsp in pairs(servers) do
 	require("lspconfig")[lsp].setup {
 		on_attach = on_attach,
 		flags = {
-			debounce_text_changes = 150,
+			debounce_text_changes = 100,
 		}
 	}
 end
